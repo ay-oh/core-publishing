@@ -7,7 +7,13 @@ body {
 }
 
 .loading {}
-.loading span {}
+.loading span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: lightslategray;
+    border-radius: 50%;
+}
 .loading span:nth-child(1) {}
 .loading span:nth-child(2) {}
 .loading span:nth-child(3) {}
