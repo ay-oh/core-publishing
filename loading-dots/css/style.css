@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading {}
+.loading span {}
+.loading span:nth-child(1) {}
+.loading span:nth-child(2) {}
+.loading span:nth-child(3) {}
