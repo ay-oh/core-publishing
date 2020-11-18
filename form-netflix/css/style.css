@@ -30,7 +30,7 @@ body:before {
 }
 
 .search {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -41,4 +41,33 @@ body:before {
     text-align: center;
     font-weight: normal;
 }
-.search input {}
+.search input[type=text] {
+    width: 500px;
+    padding: 30px;
+    border: none;
+    margin-right: -6px;
+    border-radius: 40px 0 0 40px;
+    outline: none;
+    box-sizing: border-box;
+}
+.search input[type=submit] {
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    background-color: #e50914;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 1.875rem;
+}
+
+/* CSS3 버전 이후 생긴 가상 클래스 */
+.search input[type=text]::placeholder {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.container div {
+    display: flex;
+}
