@@ -16,8 +16,6 @@ body {
     background-image: url('../images/netflix.jpg');
     background-position: center center;
     background-attachment: fixed;
-
-    color: #fff;
 }
 
 body:before {
@@ -28,5 +26,19 @@ body:before {
     height: 100%;
     top: 0;
     left: 0;
-    /* z-index: -1; */
+    z-index: -1;
 }
+
+.search {
+    border: 1px solid #fff;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+.search h1, h2, h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+.search input {}
