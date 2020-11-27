@@ -55,6 +55,23 @@ a {
     padding: 7px;
     border-radius: 20px;
     margin-right: 5px;
+    border: 2px solid #fff;
+    transition: 0.3s;
 }
 .btn-play {}
-.btn-more {}
+.btn-more {
+    background-color: transparent;
+    color: #fff;
+    /* border: 2px solid #fff; */
+}
+.btn-play:hover {
+    background-color: #000;
+    color: #fff;
+    /* border: none; */
+    border-color: transparent;
+    border-color: #000;
+}
+.btn-more:hover {
+    background-color: #fff;
+    color: #000;
+}
