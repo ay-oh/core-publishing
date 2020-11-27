@@ -17,10 +17,11 @@ a {
 
 h1 {
   font-family: 'Nanum Myeongjo';
+  text-align: center;
 }
 
 header {
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     background-color: #fff;
     height: 60px;
     text-align: center;
@@ -36,7 +37,21 @@ header {
   height: 52px;
 }
 
-section {}
-.signin {}
+section {
+    /* border: 1px solid brown; */
+}
+.signin {
+}
 .signin-type {}
-footer {}
+.btn {
+    border: 1px solid cadetblue;
+    display: block;
+    text-align: center;
+    /* height: 50px;
+    line-height: 50px; */
+    padding: 15px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+footer p {}
+footer p a {}
