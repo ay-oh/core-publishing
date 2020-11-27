@@ -40,18 +40,44 @@ header {
 section {
     /* border: 1px solid brown; */
 }
-.signin {
+input[type='checkbox'] {
+  margin-bottom: 20px;
 }
-.signin-type {}
+.find-user {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  margin: 30px;
+}
 .btn {
-    border: 1px solid cadetblue;
+    border: 1px solid lightgray;
     display: block;
     text-align: center;
     /* height: 50px;
     line-height: 50px; */
     padding: 15px;
+    margin: 0 30px;
     border-radius: 3px;
     margin-bottom: 10px;
 }
-footer p {}
-footer p a {}
+.btn:nth-of-type(1) {
+    background-color: #ffe500;
+}
+.btn:nth-of-type(2) i {
+  color: blue;
+}
+.btn:nth-of-type(3) i {
+  color: lightblue;
+}
+i {
+    float: left;
+}
+footer {
+  background:#f8f8f8;
+  height: 70px;
+  padding: 13px;
+  box-sizing: border-box;
+}
+footer p a {
+  text-decoration: underline;
+}
