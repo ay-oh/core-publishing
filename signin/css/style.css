@@ -2,23 +2,34 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 body {
-    font-family: 'Nanum Gothic', sans-serif;
-    margin: 0;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
 }
 
 h1 {
-    font-family: 'Nanum Myeongjo';
+  font-family: 'Nanum Myeongjo';
 }
 
+.container {}
+header {}
 .ico {
-    display: block;
-    margin: 0 auto;
-    background: url("../images/ico_brunch_v1_200824.png");
-    background-position: -80px -580px;
-    width: 52px;
-    height: 52px;
+  display: block;
+  margin: 0 auto;
+  background: url('../images/ico_brunch_v1_200824.png');
+  background-position: -80px -580px;
+  width: 52px;
+  height: 52px;
 }
+section {}
+.signin {}
+.signin-type {}
+footer {}
