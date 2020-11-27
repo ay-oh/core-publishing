@@ -3,6 +3,10 @@ body {
   color: #fff;
 }
 
+a {
+    text-decoration: none;
+}
+
 .video-frame {}
 .video-frame video {
   position: fixed;
