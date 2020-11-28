@@ -34,6 +34,7 @@ a {
     width: 700px;
     left: 100px;
     bottom: 100px;
+    animation: showing 1.5s 1s linear;
 }
 .heading h1 {
     font-size: 48px;
@@ -94,4 +95,14 @@ a {
 .birthday span:nth-child(2) {
     font-family: 'Monoton', cursive;
     font-size: 150px;
+}
+
+@keyframes showing {
+    0% {
+        opacity: 0;
+        margin-left: -100px;
+    }
+    100% {
+        opacity: 1;
+    }
 }
