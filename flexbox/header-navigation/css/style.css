@@ -51,3 +51,18 @@ nav {
 .gnb li a:hover {
   font-weight: 900;
 }
+
+/* @media screen and (max-width: 768px) {} */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  .gnb {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+}
