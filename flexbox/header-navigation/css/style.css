@@ -19,3 +19,23 @@ a {
   text-decoration: none;
   color: #222;
 }
+
+/* Header */
+header {
+  background-color: #dfe6e9;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  border: 3px solid green;
+  width: 1280px;
+}
+
+.logo {}
+.logo img {}
+.gnb {}
+.gnb li {}
+.gnb li a {}
+.sns {}
+.sns a {}
