@@ -1,0 +1,53 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/* Reset CSS */
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 500;
+}
+input,
+button,
+textarea {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+/* Common CSS */
+.contents {
+    border: 1px solid salmon;
+    width: 1280px;
+
+    /* Home 영역의 h1, p 태그가 수평 중앙으로 설정되어 있는 이유 */
+    margin: auto;
+}
+
+/* Header */
+
+/* Home */
+.home {
+  border: 1px solid green;
+  
+  background: url('images/man.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex; 
+}
+.heading {}
+.heading h1 {}
+.heading p {}
