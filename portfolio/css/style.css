@@ -44,7 +44,12 @@ ul {
     margin: auto;
 }
 
-/* Header */
+/* Header: block */
+header {
+  /* absolute || inline -> inline(기존 100% 없어짐) */
+  position: fixed;
+  width: 100%;
+}
 .banner {}
 .lnb {
   background-color: #fff;
@@ -75,10 +80,10 @@ nav {
 }
 
 /* Home */
-.home {
-  border: 1px solid green;
-  
-  background: url('images/man.jpg') no-repeat center center;
+.intro {
+  border: 5px solid blueviolet;
+  height: 100vh;
+  background: url('../images/man.jpg') no-repeat center center;
   background-size: cover;
   display: flex; 
 }
