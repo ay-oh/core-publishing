@@ -62,9 +62,17 @@ nav {
   justify-content: space-between;
 }
 .logo {}
-.gnb {}
+.gnb {
+  /* default horizontal */
+  display: flex;
+}
 .gnb li {}
-.gnb li a {}
+.gnb li a {
+  margin: 20px;
+}
+.gnb li a:last-child() {
+  margin-right: 0;
+}
 
 /* Home */
 .home {
