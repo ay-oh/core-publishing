@@ -29,6 +29,12 @@ button {
   cursor: pointer;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Common CSS */
 .contents {
     border: 1px solid salmon;
@@ -47,6 +53,18 @@ button {
 .lnb a {
 
 }
+
+nav {
+  border: 3px solid lightblue;
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {}
+.gnb {}
+.gnb li {}
+.gnb li a {}
 
 /* Home */
 .home {
