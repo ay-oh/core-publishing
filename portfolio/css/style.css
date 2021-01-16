@@ -39,6 +39,14 @@ button {
 }
 
 /* Header */
+.banner {}
+.lnb {
+  background-color: #fff;
+  text-align: center;
+}
+.lnb a {
+
+}
 
 /* Home */
 .home {
