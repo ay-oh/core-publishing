@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
 ```
 
-- 사용
+### 웹 폰트 사용하기
 ```css
 font-family: 'Sunflower', sans-serif;
 ```
