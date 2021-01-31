@@ -8,32 +8,11 @@ body {
 }
 
 /* Reset CSS */
-a {
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  font-weight: 500;
-}
-input,
-button,
-textarea {
-  outline: none;
-}
-button {
-  cursor: pointer;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+a{text-decoration:none}
+h1,h2,h3,h4,h5,h6{margin:0;font-weight:500}
+button,input,textarea{outline:0}
+button{cursor:pointer}
+ul{margin:0;padding:0;list-style:none}
 
 /* Common CSS */
 .contents {
@@ -80,8 +59,8 @@ nav {
 }
 
 /* Home */
-.intro {
-  border: 5px solid blueviolet;
+.home {
+  border: 5px solid maroon;
   height: 100vh;
   background: url('../images/man.jpg') no-repeat center center;
   background-size: cover;
@@ -90,3 +69,54 @@ nav {
 .heading {}
 .heading h1 {}
 .heading p {}
+
+/**
+ * Profile section
+ */
+.profile-content {
+  border: 5px solid #000;
+  display: flex;
+  /* flex: 5; */
+  padding: 100px 0;
+}
+
+.profile-content div {
+  padding: 30px;
+}
+
+.photo {
+  flex: 2;
+}
+.photo img {
+  /* width: 500px; */
+  width: 100%;
+
+  /**
+   * @see https://9elements.com/blog/css-border-radius/
+   */
+  border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  flex: 3;
+}
+.description h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.description p {
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+.description a {
+  color: tomato;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+.description a:hover {
+  text-decoration: underline;
+}
