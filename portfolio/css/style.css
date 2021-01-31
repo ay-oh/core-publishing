@@ -7,13 +7,6 @@ body {
   line-height: 1.5em;
 }
 
-/* Reset CSS */
-a{text-decoration:none}
-h1,h2,h3,h4,h5,h6{margin:0;font-weight:500}
-button,input,textarea{outline:0}
-button{cursor:pointer}
-ul{margin:0;padding:0;list-style:none}
-
 /* Common CSS */
 .contents {
     border: 1px solid salmon;
@@ -26,7 +19,9 @@ ul{margin:0;padding:0;list-style:none}
 /* Header: block */
 header {
   /* absolute || inline -> inline(기존 100% 없어짐) */
-  position: fixed;
+  /* sections 작업을 위해 고정 해제 */
+  position: absolute;
+  /* position: fixed; */
   width: 100%;
 }
 .banner {}
@@ -111,12 +106,78 @@ nav {
   font-size: 16px;
   line-height: 1.7rem;
 }
-.description a {
-  color: tomato;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 20px;
+
+/* call-to-action section */
+.call-to-action {
+  height: 450px;
+  background: url('../images/call-to-action.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
 }
-.description a:hover {
-  text-decoration: underline;
+.call-to-action:before {
+  content: '';
+  background: linear-gradient(90deg, rgba(65, 89, 208, 0.438) 0%,rgba(200, 80, 192, 0.411) 35%, rgba(255, 205, 112, 0.671) 100%);
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: -2;
+}
+.call-to-action h2 {
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 1.3em;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.call-to-action a {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 20px;
+}
+
+/* Contact me section */
+.contact {
+  height: 270px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact div {
+  text-align: center;
+}
+.contact h3{
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.contact h3 span {
+  font-weight: 500;
+}
+.btns a {
+  background-color: #fff;
+  /* padding: 10px; */
+  display: inline-block;
+  width: 200px;
+  padding: 6px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.btns a:nth-child(1) {
+  background-color: gold;
+  color: #ffffff;
+}
+.btns a:nth-child(2) {
+  background-color: whitesmoke;
+  color: #222222;
 }
