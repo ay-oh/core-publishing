@@ -18,13 +18,30 @@ body {
     margin: auto;
 }
 
-/* Header: block */
+/* header: block */
 header {
   /* absolute || inline -> inline(기존 100% 없어짐) */
   /* sections 작업을 위해 고정 해제 */
   /* position: absolute; */
   position: fixed;
   width: 100%;
+}
+
+/* header with active class(javascript) */
+header.active {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
+
+}
+/* cf. .gnb li a */
+header.active .gnb li a {
+  color: #000000;
+}
+header.active .banner {
+  display: none;
+}
+header.active nav {
+
 }
 
 .banner {}
@@ -57,7 +74,6 @@ nav {
 .gnb li a {
   margin: 20px;
   color: #fff;
-
 }
 .gnb li a:last-child() {
   margin-right: 0;
@@ -255,7 +271,7 @@ nav {
   margin: 5px;
 }
 .btns a:nth-child(1) {
-  background-color: gold;
+  background-color: orangered;
   color: #ffffff;
 }
 .btns a:nth-child(2) {
