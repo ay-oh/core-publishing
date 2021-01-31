@@ -25,13 +25,14 @@ header {
   /* position: absolute; */
   position: fixed;
   width: 100%;
+  transition: 0.7s;
 }
 
-/* header with active class(javascript) */
+/* header active class withjavascript */
 header.active {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
-
+  height: 70px;
 }
 /* cf. .gnb li a */
 header.active .gnb li a {
@@ -41,14 +42,15 @@ header.active .banner {
   display: none;
 }
 header.active nav {
-
+  padding-bottom: 20px;
 }
 
-.banner {}
+.banner {
+  background-color: #222;
+  display: flex;
+}
 .lnb {
   margin: auto;
-  background-color: #222;
-  text-align: center;
   padding: 8px;
 }
 .lnb a {
