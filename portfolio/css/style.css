@@ -107,6 +107,27 @@ nav {
   line-height: 1.7rem;
 }
 
+/* section: portfolio(projects) */
+.portfolio-content {
+  /* 다른 section과 거리두기 */
+  padding: 200px 0;
+}
+.portfolio-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.projects {
+  border: 3px solid tomato;
+  display: flex;
+  justify-content: space-between ;
+}
+.project {
+  border: 3px solid turquoise;
+  width: 400px;
+  height: 600px;
+}
+
 /* call-to-action section */
 .call-to-action {
   height: 450px;
