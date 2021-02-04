@@ -39,7 +39,10 @@ header.active .gnb li a {
   color: #000000;
 }
 header.active .banner {
-  display: none;
+  /* transition을 줄 수 없음 */
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
 }
 header.active nav {
   padding-bottom: 20px;
@@ -63,6 +66,7 @@ header.active nav {
 .banner {
   background-color: #222;
   display: flex;
+  transition: 0.3s;
 }
 .lnb {
   margin: auto;
@@ -256,6 +260,38 @@ nav {
   padding: 15px 25px;
   border-radius: 20px;
 }
+.career {
+  padding: 100px;
+}
+.career_content {
+  display: flex;
+  flex-direction: column;
+}
+.slider {
+  border: 3px solid tomato;
+  /* slick.js가 해줌 */
+  /* display: flex; */
+}
+.slider div {
+  border: 3px solid cyan;
+  height: 350px;
+}
+.study2 {
+  display: flex;
+  align-items: center;
+}
+.study2 img {
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.study2 span {
+
+}
+.study2 span b {
+
+}
+
 
 /* Contact me section */
 .contact {
