@@ -8,7 +8,21 @@
  */
 @media (max-width: 768px) {
     header {
-        display: none;
+        /* display: none; */
+    }
+    nav {
+        /* TODO: style.css에서 nav 태그의 width 값을 참고해서 반응해보세요. */
+        width: 100%;
+        padding: 0 20px;
+    }
+    .heading h1 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+    .heading p {
+        font-size: 18px;
+        line-height: 1.5em;
+        padding: 0 100px;
     }
 
     /* 1. contents */
