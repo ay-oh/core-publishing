@@ -18,6 +18,7 @@ body {
     margin: auto;
 }
 
+
 /* header: block */
 header {
   /* absolute || inline -> inline(기존 100% 없어짐) */
@@ -27,8 +28,7 @@ header {
   width: 100%;
   transition: 0.7s;
 }
-
-/* header active class withjavascript */
+/* header active class with javascript */
 header.active {
   background-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
@@ -47,6 +47,7 @@ header.active .banner {
 header.active nav {
   padding-bottom: 20px;
 }
+
 
 .gototop {
   background: linear-gradient(45deg, orangered, orangered);
@@ -76,6 +77,7 @@ header.active nav {
   color: #fff;
 }
 
+
 nav {
   /* border: 3px solid lightblue; */
   width: 1280px;
@@ -99,6 +101,7 @@ nav {
 .gnb li a:last-child() {
   margin-right: 0;
 }
+
 
 /* Home */
 .home {
@@ -164,7 +167,10 @@ nav {
   line-height: 1.7rem;
 }
 
-/* section: portfolio(projects) */
+
+/**
+ * Portfolio section(projects)
+ */
 .portfolio-content {
   /* 다른 section과 거리두기 */
   padding: 200px 0;
@@ -255,7 +261,7 @@ nav {
   border-radius: 10px;
 }
 .call-to-action a {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   background-color: #fff;
   padding: 15px 25px;
   border-radius: 20px;
@@ -268,12 +274,12 @@ nav {
   flex-direction: column;
 }
 .slider {
-  border: 3px solid tomato;
+  /* border: 3px solid tomato; */
   /* slick.js가 해줌 */
   /* display: flex; */
 }
 .slider div {
-  border: 3px solid cyan;
+  /* border: 3px solid cyan; */
   height: 350px;
 }
 .study2 {
