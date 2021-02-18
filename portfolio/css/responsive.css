@@ -25,6 +25,25 @@
         padding: 0 100px;
     }
 
+    .gnb {
+        flex-direction: column;
+        background-color: #fff;
+
+        /* TODO: 헤더를 항상 우측 상단에 고정시켜 보세요. */
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        /* TODO: 네비게이션 사이즈 조절*/
+        width: 250px;
+        height: 100vh;
+    }
+    .gnb li a {
+        
+        display: block;
+        color: #111;
+    }
+
     /* 1. contents */
     .contents {
         /* border: 3px solid goldenrod; */
