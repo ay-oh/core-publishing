@@ -2,6 +2,13 @@
 
 // });
 
+// sliding
+$('.gnb a').click((e) => {
+    // 800 -> 0.8
+    $.scrollTo(this.hash || 0, 800);
+    e.preventDefault();
+});
+
 // trigger
 $('.trigger').click(() => {
     $(this).toggleClass('active');
@@ -9,7 +16,7 @@ $('.trigger').click(() => {
 });
 
 // 클릭 시
-$('gnb a').click(() => {
+$('.gnb a').click(() => {
     $('.gnb, .trigger').removeClass('active');
 });
 
