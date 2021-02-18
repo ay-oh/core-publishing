@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+
+* {
+  font-family: 'Sunflower', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5em;
+}
+
+/* Common CSS */
+.contents {
+    /* border: 1px solid salmon; */
+    width: 1280px;
+
+    /* Home 영역의 h1, p 태그가 수평 중앙으로 설정되어 있는 이유 */
+    margin: auto;
+}
+
+
+/* header: block */
+header {
+  /* absolute || inline -> inline(기존 100% 없어짐) */
+  /* sections 작업을 위해 고정 해제 */
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  transition: 0.7s;
+}
+/* header active class with javascript */
+header.active {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.404);
+  height: 70px;
+}
+/* cf. .gnb li a */
+header.active .gnb li a {
+  color: #000000;
+}
+header.active .banner {
+  /* transition을 줄 수 없음 */
+  /* display: none; */
+  height: 0;
+  overflow: hidden;
+}
+header.active nav {
+  padding-bottom: 20px;
+}
+
+
+.gototop {
+  background: linear-gradient(45deg, orangered, orangered);
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  right: 50px;
+  bottom: 50px;
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 55px;
+  transition: 0.3s;
+}
+
+.banner {
+  background-color: #222;
+  display: flex;
+  transition: 0.3s;
+}
+.lnb {
+  margin: auto;
+  padding: 8px;
+}
+.lnb a {
+  color: #fff;
+}
+
+
+nav {
+  /* border: 3px solid lightblue; */
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fff; */
+}
+.logo img {
+}
+.gnb {
+  /* default horizontal */
+  display: flex;
+}
+.gnb li {}
+.gnb li a {
+  margin: 20px;
+  color: #fff;
+}
+.gnb li a:last-child() {
+  margin-right: 0;
+}
+.trigger {
+  display: none;
+}
+
+
+/* Home */
+.home {
+  /* border: 5px solid maroon; */
+  height: 100vh;
+  background: url('../images/man.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex; 
+}
+.heading {
+  color: #fff;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 56px;
+  margin-bottom: 70px;
+}
+.heading p {
+  font-size: 22px;
+  line-height: 1.5em;
+  padding: 0 100px;
+}
+
+/**
+ * Profile section
+ */
+.profile-content {
+  /* border: 5px solid #000; */
+  display: flex;
+  /* flex: 5; */
+  padding: 100px 0;
+}
+
+.profile-content div {
+  padding: 30px;
+}
+
+.photo {
+  flex: 2;
+}
+.photo img {
+  /* width: 500px; */
+  width: 100%;
+
+  /**
+   * @see https://9elements.com/blog/css-border-radius/
+   */
+  border-radius: 40% 60% 70% 30% / 60% 40% 60% 40%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  flex: 3;
+}
+.description h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.description p {
+  font-size: 16px;
+  line-height: 1.7rem;
+}
+
+
+/**
+ * Portfolio section(projects)
+ */
+.portfolio-content {
+  /* 다른 section과 거리두기 */
+  padding: 200px 0;
+}
+.portfolio-content h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.projects {
+  /* border: 3px solid tomato; */
+  display: flex;
+  justify-content: space-between ;
+}
+.project {
+  /* border: 3px solid turquoise; */
+  width: 400px;
+  height: 600px;
+
+  border-radius: 0 25px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.thumbnail {
+  width: 400px;
+  height: 300px;
+  /* overflow: hidden; */
+}
+.thumbnail img {
+  /* 이곳에 width, height px이 들어가면 안되는 이유? */
+  height: 100%;
+}
+.proj-desc {
+  padding: 20px;
+}
+.proj-desc .badge {
+  background-color: tomato;
+  color: #ffffff;
+  padding: 2px 10px;
+}
+.proj-desc h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+.proj-desc p {
+  font-size: 16px;
+}
+.proj-desc a {
+  color: tomato;
+  font-weight: bold;
+}
+.proj-desc a img {
+  /* transition은 hover가 아닌 곳에! */
+  transition: 0.5s;
+}
+.proj-desc a:hover img {
+  /* transform: translateX(10px); */
+  margin-left: 10px;
+}
+
+/* call-to-action section */
+.call-to-action {
+  height: 450px;
+  background: url('../images/call-to-action.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+}
+.call-to-action:before {
+  content: '';
+  background: linear-gradient(90deg, rgba(65, 89, 208, 0.438) 0%,rgba(200, 80, 192, 0.411) 35%, rgba(255, 205, 112, 0.671) 100%);
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: -2;
+}
+.call-to-action h2 {
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 1.3em;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.call-to-action a {
+  /* border: 1px solid #000; */
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 20px;
+}
+.career {
+  padding: 100px;
+}
+.career_content {
+  display: flex;
+  flex-direction: column;
+}
+.slider {
+  /* border: 3px solid tomato; */
+  /* slick.js가 해줌 */
+  /* display: flex; */
+}
+.slider div {
+  /* border: 3px solid cyan; */
+  height: 350px;
+}
+.study2 {
+  display: flex;
+  align-items: center;
+}
+.study2 img {
+  width: 85px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.study2 span {
+
+}
+.study2 span b {
+
+}
+
+
+/* Contact me section */
+.contact {
+  height: 270px;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact div {
+  text-align: center;
+}
+.contact h3{
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.contact h3 span {
+  font-weight: 500;
+}
+.btns a {
+  background-color: #fff;
+  /* padding: 10px; */
+  display: inline-block;
+  width: 200px;
+  padding: 6px;
+  border-radius: 10px;
+  margin: 5px;
+}
+.btns a:nth-child(1) {
+  background-color: orangered;
+  color: #ffffff;
+}
+.btns a:nth-child(2) {
+  background-color: whitesmoke;
+  color: #222222;
+}

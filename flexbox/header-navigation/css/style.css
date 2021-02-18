@@ -1,0 +1,68 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* https://noonnu.cc/font_page/367 */
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'GmarketSansLight', sans-serif;
+  color: #222;
+  margin: 0;
+}
+
+/* Reset CSS */
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #dfe6e9;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  border: 3px solid green;
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.gnb {
+  /* ul 속성 제거 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.gnb li a {
+  margin: 10px;
+}
+
+.gnb li a:hover {
+  font-weight: 900;
+}
+
+/* @media screen and (max-width: 768px) {} */
+@media (max-width: 768px) {
+  header {
+    height: auto;
+  }
+  nav {
+    width: 100%;
+    flex-direction: column;
+  }
+  .gnb {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+}
