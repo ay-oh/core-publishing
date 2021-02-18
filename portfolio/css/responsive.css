@@ -10,6 +10,9 @@
     header {
         /* display: none; */
     }
+    .banner {
+        display: none;
+    }
     nav {
         /* TODO: style.css에서 nav 태그의 width 값을 참고해서 반응해보세요. */
         width: 100%;
@@ -32,16 +35,61 @@
         /* TODO: 헤더를 항상 우측 상단에 고정시켜 보세요. */
         position: fixed;
         top: 0;
-        right: 0;
+        right: -250px;
 
         /* TODO: 네비게이션 사이즈 조절*/
         width: 250px;
         height: 100vh;
     }
+    .gnb.active {
+        right: 0;
+    }
     .gnb li a {
-        
         display: block;
         color: #111;
+    }
+
+    /* Trigger */
+    .trigger {
+        /* border: 1px solid gold; */
+        display: block;
+        width: 30px;
+        height: 16px;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+
+        /* NOTE: cursor: pointer; 를 줄 필요 없는 이유? */
+    }
+    .trigger span {
+        position: absolute;
+        height: 1px;
+        background-color: gold;
+        width: 100%;
+
+        transition: 0.5s;
+    }
+    .trigger span:nth-child(1) {
+        top: 0%;
+    }
+    .trigger span:nth-child(2) {
+        top: 50%;
+    }
+    .trigger span:nth-child(3) {
+        top: 100%;
+    }
+    .trigger.active span {
+        background-color: #111;
+    }
+    .trigger.active span:nth-child(1) {
+        top: 0%;
+        transition: rotate(45deg);
+    }
+    .trigger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .trigger.active span:nth-child(3) {
+        top: 50%;
     }
 
     /* 1. contents */

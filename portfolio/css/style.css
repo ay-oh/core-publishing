@@ -101,6 +101,9 @@ nav {
 .gnb li a:last-child() {
   margin-right: 0;
 }
+.trigger {
+  display: none;
+}
 
 
 /* Home */
