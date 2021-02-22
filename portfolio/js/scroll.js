@@ -23,9 +23,9 @@ $('.gnb a').click(() => {
 $(window).scroll(function () {
     // 스크롤 상단이 50px보다 크다면
     if ($(window).scrollTop() > 50) {
-        $("header, .gototop").addClass("active");
+        $("header").addClass("active");
     } else {
-        $("header, .gototop").removeClass("active");
+        $("header").removeClass("active");
     }
 });
 
