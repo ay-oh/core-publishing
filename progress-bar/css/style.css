@@ -45,4 +45,21 @@
 
     /* TODO: 나머지 item 퍼센테이지를 별도로 주기 위해 인라인으로 width를 주세요. */
     /* width: 90%; */
+
+    animation-name: progress;
+    animation-duration: 1s;
+
+    /* @see https://developer.mozilla.org/ko/docs/Web/CSS/animation-fill-mode */
+    
+}
+
+@keyframes progress {
+    0% {
+        width: 0;
+    }
+}
+
+/* TODO: pg-bar-wrapper 밑에 있는 1번째 item 밑의 percent 클래스를 선택자로 설정하세요. */
+________________________________ {
+    animation-delay: 0s;
 }
